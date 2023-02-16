@@ -1,8 +1,12 @@
 <?php
 /** @var \Local\Blog\Block\Template $block */
+$viewModel = $block->getViewModel();
+// var_dump($viewModel);
+// die()
 ?>
-
 <div class="template">
-    <h1><?=$block->getName()?></h1>
     <h1>Blog....</h1>
+    <h2><?= $block->escapeHtml($viewModel->getTitle());?></h2><br />
+    <h2><?= $block->escapeHtml($block->getBlock());?></h2>
+
 </div>
