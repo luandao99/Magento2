@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
-        <route id="blog" frontName="blog">
+        <route id="blog_id" frontName="blog">
             <module name="Local_Blog" />
             <action name="index" class="Local\Blog\controller\Blog\Index" />
             <action name="insert" class="Local\Blog\controller\Blog\Insert" />
