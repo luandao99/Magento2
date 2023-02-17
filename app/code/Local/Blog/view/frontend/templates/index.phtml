@@ -1,0 +1,15 @@
+<?php
+
+/** @var \Local\Blog\Block\Template $block */
+$blogs = $block->updateTestName();
+// var_dump($blogs);
+// die();
+?>
+
+<!-- <div class="template">
+   <h1>Templates</h1>
+</div> -->
+<?php foreach ($blogs as $blog) : ?>
+   <h1><?= $block->escapeHtml($blog->getData('title')) ?></h1>
+   <p><?= $block->escapeHtml($blog->getData('description')) ?></p>
+<?php endforeach; ?>
