@@ -1,12 +1,13 @@
-<?php
+<!-- <?php
+
 /** @var \Local\Blog\Block\Template $block */
-$viewModel = $block->getViewModel();
-// var_dump($viewModel);
+// $viewModel = $block->getViewModel();
+// $blogCollection = $viewModel->getCollection();
+// var_dump($blogCollection);
 // die()
-?>
+?> -->
 <div class="template">
     <h1>Blog....</h1>
-    <h2><?= $block->escapeHtml($viewModel->getTitle());?></h2><br />
-    <h2><?= $block->escapeHtml($block->getBlock());?></h2>
+    <h2><?= $block->escapeHtml($block->getBlock()); ?></h2>
 
 </div>

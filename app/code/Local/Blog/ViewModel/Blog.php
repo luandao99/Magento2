@@ -1,15 +1,20 @@
 <?php
+
 namespace Local\Blog\ViewModel;
+
 use Magento\Framework\View\Element\Block\ArgumentInterface;
+use Local\Blog\Model\Blog as BlogModel;
 
 class Blog implements ArgumentInterface
 {
-    public function __construct()
+    private $collectionFactory;
+    public function _construct(BlogModel $collectionFactory)
     {
-         
+        $this->collectionFactory = $collectionFactory;
     }
-    public function getTitle()
+    public function getCollection()
     {
-        return 'Blog View Model';
+        $product = $this->collectionFactory->load();
+        return $product;
     }
 }

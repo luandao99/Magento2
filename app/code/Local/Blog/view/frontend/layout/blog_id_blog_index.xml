@@ -5,8 +5,8 @@
             <block class="Local\Blog\Block\Blog" template="Local_Blog::blog.phtml">
                 <arguments>
                     <argument name="view_model" xsi:type="object">Local\Blog\ViewModel\Blog</argument>
-                    </arguments>
-                </block>
-            </referenceContainer>
+                </arguments>
+            </block>
+        </referenceContainer>
     </body>
 </page>

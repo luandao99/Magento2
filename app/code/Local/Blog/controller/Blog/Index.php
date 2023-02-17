@@ -1,6 +1,6 @@
 <?php
 
-namespace Local\Blog\controller\Blog;
+namespace Local\Blog\Controller\Blog;
 
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
