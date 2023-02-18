@@ -1,4 +1,5 @@
 <?php
+
 namespace Local\Blog\Block;
 
 use Magento\Framework\View\Element\Template;
@@ -20,14 +21,16 @@ class MyBlock extends Template
     public function updateTestName()
     {
         $test = $this->_testFactory->create();
-;
         return $test;
-        // $test->load();
-        // $test->setName('New Name');
-        // $test->save();
     }
-    public function test()
+    public function getFormActionUrl()
     {
-        return 'errrrr';
+        return $this->getUrl('*/*/save');
     }
+    // public function deleteForm($id)
+    // {
+    //     $result= $this->getUrl('*/*/delete',$id);
+    //     var_dump($result);
+    //     die();
+    // }
 }

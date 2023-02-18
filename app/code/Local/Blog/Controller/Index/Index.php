@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Local\Blog\Controller\Index;
 
+
 use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\App\RequestInterface;
 use Magento\Framework\View\Result\Page;
@@ -24,6 +25,7 @@ class Index implements HttpGetActionInterface
      */
     private $request;
 
+
     /**
      * @param PageFactory $pageFactory
      * @param RequestInterface $request
@@ -39,9 +41,6 @@ class Index implements HttpGetActionInterface
      */
     public function execute()
     {
-        // Get the params that were passed from our Router
-        $firstParam = $this->request->getParam('first_param', null);
-        $secondParam = $this->request->getParam('second_param', null);
 
         return $this->pageFactory->create();
     }
