@@ -1,9 +1,9 @@
 <?php
 
 /** @var \Local\Blog\Block\Template $block */
-$blogs = $block->updateTestName();
-// var_dump($blogs);
-// die();
+$blogs = $block->getRepositoryCollection();
+var_dump($blogs);
+die();
 ?>
 
 <!-- <div class="template">

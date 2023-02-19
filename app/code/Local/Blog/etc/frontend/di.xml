@@ -11,4 +11,10 @@
             </argument>
         </arguments>
     </type>
+    <preference for="Local\Blog\Api\Data\PostInterface" 
+                type="Local\Blog\Model\Post" />
+    <preference for="Local\Blog\Api\PostRepositoryInterface"
+                type="Local\Blog\Model\PostRepository" />
+    <preference for="Local\Blog\Api\Data\PostSearchResultInterface"
+                type="Magento\Framework\Api\SearchResults" />
 </config>
